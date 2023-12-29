@@ -1,10 +1,7 @@
 from datetime import datetime
 
 import requests
-from dotenv import load_dotenv
 from flask import Flask, render_template, request
-
-load_dotenv()  # Memuat variabel lingkungan dari file .env
 
 app = Flask(__name__, template_folder="templates")
 
