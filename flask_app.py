@@ -1,4 +1,3 @@
-import os
 from datetime import datetime
 
 import requests
@@ -15,7 +14,7 @@ def get_weather_data(query="Semarang"):
     # Parameter yang dibutuhkan oleh API
     params = {
         # Mengambil kunci API dari environment variable
-        "key": os.getenv("WEATHER_API_KEY"),
+        "key": "",  # Isi dengan kunci API
         "q": query,
         "days": 5,
         "aqi": "no",
